@@ -60,11 +60,15 @@ class AppDelegate
               view.frame = CGRect.new(
                 [view.frame.origin.x,
                   view.frame.origin.y - (@last_view.frame.size.height + 10)],
-                  view.frame.size)
-            },
+                view.frame.size)
+            end
+          },
 
         completion:lambda { |finished|
           @last_view.removeFromSuperview
-          })
-    end
+        })
+      end
+  end
+
+
 end
